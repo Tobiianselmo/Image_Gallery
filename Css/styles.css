@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+ } 
+
+nav {
+    background-color: rgb(164, 203, 255);
+    padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.buscador {
+	display: flex;
+	align-items: center;
+}
+
+.buscador-input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Un borde sutil */
+    border-radius: 5px;
+    background-color: #ffffff; /* Fondo más claro */
+}
+
+
+.buscador-button {
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	background-color: rgb(0, 0, 0);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.buscador-input:hover{
+	background-color: rgb(235, 235, 235);
+	transition: background-color 0.2s ease;
+}
+
+.buscador-button:hover {
+	background-color: rgb(98, 98, 98);
+	transition: background-color 0.2s ease;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.listado-nav {
+    margin-left: 20px;
+}
+
+.listado-nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+	transition: background-color 0.2s ease;
+	transition: color 0.2s ease;
+}
+
+.listado-nav a:hover {
+	color: rgb(255, 255, 255);
+    background-color: rgba(99, 131, 236, 0.5);
+    border-radius: 5px;
+}
+
+.login-button {
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #3b5998;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #2d4373;
+}
+
+/* Gallery css */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en múltiples filas */
+    gap: 10px; /* Espacio entre las imágenes */
+    padding: 10px;
+}
+
+.gallery-photo {
+    max-width: 100%; /* Asegúrate de que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+
+.gallery-photo:hover {
+    transform: scale(1.05);
+}
