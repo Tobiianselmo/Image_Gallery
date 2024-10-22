@@ -1,10 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+ }
+
 .login-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(164, 203, 255);
+    background-color: rgb(3, 46, 103);
     color: #fff;
     text-align: center;
 }

@@ -4,25 +4,24 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Favorites | Image Gallery</title>
+		<link rel="shortcut icon" href="Images/ig-icon.ico" type="image/x-icon">
 		<link href="Css/styles.css" rel="stylesheet">
 	</head>
 	<body>
 		<nav class="navegador">
 			<div class="buscador">
 				<input type="text" class="buscador-input" placeholder="Buscar...">
-				<input type="submit" class="buscador-button" value="Buscar">
+				<button class="buscador-button">Buscar</button>
 			</div>
 			<ul>
 				<li class="listado-nav"><a href="index.html">Inicio</a></li>
 				<li class="listado-nav"><a href="favorites.html">Favoritos</a></li>
+				<li id="logout-button" class="listado-nav"><a href="login.html">Log out</a></li>
 			</ul>
 		</nav>
-		<div>
-			<h1>¡ESTOS SON LOS FAVORITOS!</h1>
-		</div>
-		<script src="JavaScript/index.js"></script>
-		<script src="JavaScript/auth.js"></script>
+
+		<section id="favorites-gallery" class="gallery"></section>
+
 		<script src="JavaScript/favorites.js"></script>
-		<script src="JavaScript/gallery.js"></script>
 	</body>
 </html>

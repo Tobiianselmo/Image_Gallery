@@ -5,7 +5,7 @@
  } 
 
 nav {
-    background-color: rgb(164, 203, 255);
+    background-color: rgb(3, 46, 103);
     padding: 20px;
 	display: flex;
 	align-items: center;
@@ -20,9 +20,9 @@ nav {
 .buscador-input {
     padding: 10px;
     margin-right: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* Un borde sutil */
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    background-color: #ffffff; /* Fondo más claro */
+    background-color: #ffffff;
 }
 
 
@@ -93,14 +93,63 @@ nav ul {
     padding: 10px;
 }
 
+/* Estilo de la imagen dentro del contenedor */
 .gallery-photo {
-    max-width: 100%; /* Asegúrate de que la imagen no exceda el ancho del contenedor */
-    height: auto; /* Mantener la proporción de la imagen */
-    border-radius: 5px; /* Bordes redondeados para las imágenes */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Si quieres bordes redondeados en las fotos */
 }
-
 
 .gallery-photo:hover {
     transform: scale(1.05);
+}
+
+/* Estilo del contenedor de la imagen */
+.photo-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Estilo del botón de favoritos */
+.fav-button {
+    display: block;
+    width: 40px;         /* Ajusta el tamaño del botón */
+    height: 40px;        /* Hace el botón cuadrado */
+    border-radius: 50%;  /* Hace el botón circular */
+    background-color: rgb(255, 150, 150);  /* Cambia el color del botón */
+    color: white;
+    border: none;
+    position: absolute;
+    bottom: -20px;       /* Mueve el botón hacia abajo respecto a la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fav-button:hover {
+    background-color: darkred; /* Cambia el color al pasar el cursor */
+}
+
+/* Estilo del botón de eliminar */
+.remove-button {
+    display: block;
+    width: 40px;         /* Ajusta el tamaño del botón */
+    height: 40px;        /* Hace el botón cuadrado */
+    border-radius: 50%;  /* Hace el botón circular */
+    background-color: rgb(255, 150, 150);  /* Cambia el color del botón */
+    color: white;
+    border: none;
+    position: absolute;
+    bottom: -20px;       /* Mueve el botón hacia abajo respecto a la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.remove-button:hover {
+    background-color: darkred; /* Cambia el color al pasar el cursor */
 }

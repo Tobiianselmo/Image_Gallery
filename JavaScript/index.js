@@ -8,6 +8,16 @@ if (!accessToken) {
     window.location.href = 'login.html'; // Redirigir si no hay token
 }
 
+function removeToken(token) {
+    localStorage.clear(); // Borra todo, hasta los favoritos
+    //localStorage.removeItem('accessToken'); // Borra solo el token de acceso.
+  }
+
+// Funcion para remover el token, cuando se presiona logout
+document.getElementById('logout-button').addEventListener('click', function() {
+    removeToken(accessToken);
+});
+
 // Función para buscar fotos en Unsplash
 async function fetchPhotos(query) {
     const url = `https://api.unsplash.com/search/photos?query=${query}&client_id=${accessToken}&per_page=10`;
@@ -46,6 +56,3 @@ document.querySelector('.buscador-button').addEventListener('click', () => {
         fetchPhotos(query); // Realiza la búsqueda con la API de Unsplash
     }
 });
-
-// Cargar fotos de ejemplo al iniciar la página (opcional)
-fetchPhotos('nature'); // Puedes cambiar esto por cualquier búsqueda inicial

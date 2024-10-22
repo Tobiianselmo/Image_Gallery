@@ -1,11 +1,11 @@
 // auth.js
 
 // Guardar credenciales de OAuth obtenidas desde Unsplash
-const clientId = '667357';
-const redirectUri = 'http://localhost';
+const clientId = 'qU5_jEzEA67Pnj60WiJul9c9_Xl-1-4QD2_NtwBYoNw';
+const redirectUri = 'http://127.0.0.1:5500/login.html';
 
 // URL de autenticación para redirigir al usuario a Unsplash
-const authUrl = `https://unsplash.com/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=public+read_user+write_likes`;
+const authUrl = `https://unsplash.com/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=public+read_user`;
 
 // Función para redirigir a Unsplash para iniciar sesión
 function redirectToAuth() {
