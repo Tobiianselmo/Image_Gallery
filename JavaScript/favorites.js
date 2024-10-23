@@ -1,4 +1,8 @@
 // Si no hay token, redirige al usuario a la página de inicio de sesión
+
+// Verifica si hay un token de acceso almacenado
+const accessToken = localStorage.getItem('accessToken');
+
 if (!accessToken) {
     window.location.href = 'login.html'; // Redirigir si no hay token
 }
