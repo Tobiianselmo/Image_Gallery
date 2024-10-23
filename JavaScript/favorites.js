@@ -1,3 +1,18 @@
+// Si no hay token, redirige al usuario a la página de inicio de sesión
+if (!accessToken) {
+    window.location.href = 'login.html'; // Redirigir si no hay token
+}
+
+function removeToken(token) {
+    localStorage.clear(); // Borra todo, hasta los favoritos
+    //localStorage.removeItem('accessToken'); // Borra solo el token de acceso.
+  }
+
+// Funcion para remover el token, cuando se presiona logout
+document.getElementById('logout-button').addEventListener('click', function() {
+    removeToken(accessToken);
+});
+
 // Función para mostrar fotos en la galería de favoritos
 function displayFavorites() {
     const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
