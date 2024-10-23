@@ -115,14 +115,14 @@ nav ul {
 /* Estilo del botón de favoritos */
 .fav-button {
     display: block;
-    width: 40px;         /* Ajusta el tamaño del botón */
-    height: 40px;        /* Hace el botón cuadrado */
-    border-radius: 50%;  /* Hace el botón circular */
-    background-color: rgb(255, 150, 150);  /* Cambia el color del botón */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 150, 150);
     color: white;
     border: none;
     position: absolute;
-    bottom: -20px;       /* Mueve el botón hacia abajo respecto a la imagen */
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
@@ -130,20 +130,20 @@ nav ul {
 }
 
 .fav-button:hover {
-    background-color: darkred; /* Cambia el color al pasar el cursor */
+    background-color: darkred;
 }
 
 /* Estilo del botón de eliminar */
 .remove-button {
     display: block;
-    width: 40px;         /* Ajusta el tamaño del botón */
-    height: 40px;        /* Hace el botón cuadrado */
-    border-radius: 50%;  /* Hace el botón circular */
-    background-color: rgb(255, 150, 150);  /* Cambia el color del botón */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 150, 150);
     color: white;
     border: none;
     position: absolute;
-    bottom: -20px;       /* Mueve el botón hacia abajo respecto a la imagen */
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
@@ -151,5 +151,5 @@ nav ul {
 }
 
 .remove-button:hover {
-    background-color: darkred; /* Cambia el color al pasar el cursor */
+    background-color: darkred;
 }
